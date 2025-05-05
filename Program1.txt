@@ -1,0 +1,29 @@
+
+Program for finding length of the longest substring without repeating characters. 
+
+public class Substring{
+     public static int lengthSubstring(String s) {
+        int maxLength = 0;
+        int left = 0;
+        HashSet<Character> C= new HashSet<>();
+
+        for (int right = 0; right < s.length(); right++) {
+            while (C.contains(s.charAt(right))) {
+                C.remove(s.charAt(left));
+                left++;
+            }
+            C.add(s.charAt(right));
+            maxLength = Math.max(maxLength, right - left + 1);
+        }
+
+        return maxLength;
+    }
+
+    public static void main(String[] args) {
+        String input1 = "abcabcbb";
+        String input2 = "bbbbb";
+         System.out.println("Length of longest substring in \"" + input1 + "\": " + lengthSubstring(input1));
+        System.out.println("Length of longest substring in \"" + input2 + "\": " + lengthSubstring(input2));
+        System.out.println("Length of longest substring in \"" + input3 + "\": " + lengthSubstring(input3));
+    }
+}
