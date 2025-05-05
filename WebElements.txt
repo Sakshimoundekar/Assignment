@@ -1,0 +1,36 @@
+package QA.Pacakage;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class PageObject {
+
+	public WebDriver driver;
+    public PageObject(WebDriver driver) {
+			this.driver=driver;
+		   
+    }
+		By inputBox = By.xpath("//input[@type='text']"); 
+	    By submitButton = By.id("submitBtn");     
+	    By Output = By.id("result");    
+
+	    public 	WebElement inputBox()
+	    {
+	    	return driver.findElement(inputBox);
+	    }
+	    public 	WebElement submitButton()
+	    {
+	    	return driver.findElement(submitButton);
+	    }
+	    public 	WebElement Output()
+	    {
+	    	return driver.findElement(Output);
+	    }
+		
+		}
+		
+
+	
+
+
