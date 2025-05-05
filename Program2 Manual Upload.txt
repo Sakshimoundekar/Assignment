@@ -1,0 +1,28 @@
+Problem 2:
+
+Manual Test Cases:
+
+1.Test Case :
+         Test Case ID: TC001
+         Scenario: Verify that website should launch properly and user should able to login
+         Steps:  1) Open the URL   https://agrichain.com 
+                 2) Enter the Valid Credentials.
+
+2.Test Case :
+        Test Case ID: TC002
+        Scenario: Verify that the length of the longest substring “abcabcbb” without repeating characters.
+        Steps:  1) Enter the “abcabcbb” string in the input box.
+                2) Click on submit button.
+                3) Check the output inside the navigated window
+        Expected Result:  Length of longest substring “abc” is 3
+
+
+
+
+3.Test Case :
+        Test Case ID: TC003
+        Scenario: Verify that the length of the longest substring “bbbbb” without repeating characters.
+        Steps:  1) Enter the “bbbbb” string in the input box.
+                2) Click on submit button.
+                3) Check the output inside the navigated window
+        Expected Result:  Length of longest substring “b” is 1
